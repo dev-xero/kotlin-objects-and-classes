@@ -14,3 +14,16 @@ open class Animal {
     open fun roam() = println("Roaming")
     fun sleep() = println("Sleeping")
 }
+
+fun main() {
+    val animals = arrayOf(
+        Wolf(),
+        Hippo()
+    )
+
+    for (animal: Animal in animals) {
+        animal.eat()
+        animal.roam()
+        println()
+    }
+}
