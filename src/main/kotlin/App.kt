@@ -3,8 +3,8 @@ import music.Song
 import space.Planet
 
 fun main() {
-    val doggo = Dog(name = "Doggo", weight = 30, breed = "doggy-doggo")
-    val puppy = Dog(name = "Pal", weight = 18, breed = "terrier")
+    val doggo = Dog(name = "Doggo", weight = 30, breedParam = "doggy-doggo")
+    val puppy = Dog(name = "Pal", weight = 18, breedParam = "terrier")
 
     val mercury = Planet(
         name = "Mercury",
@@ -72,6 +72,8 @@ fun main() {
 
     println(doggo.bark())
     println(puppy.bark())
+
+    println("${doggo.name} weighs ${doggo.weightInKgs}kg")
 
     println("\nPlanet ${earth.name} is ${if (earth.isHabitable) "habitable" else "not habitable"}")
     println("Planet ${mars.name} is ${if (mars.type.lowercase() != "terrestrial") "a gas giant" else "terrestrial"}")
