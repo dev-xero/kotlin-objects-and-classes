@@ -3,8 +3,8 @@ import music.Song
 import space.Planet
 
 fun main() {
-    val doggo = Dog(name = "Doggo", weight = 30, breedParam = "doggy-doggo")
-    val puppy = Dog(name = "Pal", weight = 18, breedParam = "terrier")
+    val doggo = Dog(name = "Doggo", weight = 30, breed = "doggy-doggo")
+    val puppy = Dog(name = "Pal", weight = 18, breed = "terrier")
 
     val mercury = Planet(
         name = "Mercury",

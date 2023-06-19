@@ -1,8 +1,13 @@
 package animals
 
-class Dog(val name: String, var weight: Int, breedParam: String) {
-    val breed = breedParam.uppercase()
+class Dog(val name: String, weight: Int, breed: String) {
+    val breed = breed.uppercase()
     var activities = arrayOf("walks")
+
+    var weight: Int = weight
+        set(value) {
+            if (value > 0) field = value
+        }
 
     val weightInKgs: Double
         get() = String.format("%.2f", weight / 2.2).toDouble()
