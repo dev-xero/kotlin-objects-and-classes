@@ -10,9 +10,8 @@ class Hippo : Animal() {
     override val habitat: String
         get() = "water"
 
-    override fun eat() = println("The hippo is eating grass")
-    override fun makeNoise() = println("The hippo is grunting")
-    override fun roam() = println("The hippo is roaming")
+    override fun eat() = println("The hippo is eating $food")
+    override fun makeNoise() = println("Grunt Grunt!")
 }
 
 fun main() {
