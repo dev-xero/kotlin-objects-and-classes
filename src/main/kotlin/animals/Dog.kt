@@ -4,7 +4,7 @@ class Dog(val name: String, weight: Int, breed: String) {
     val breed = breed.uppercase()
     var activities = arrayOf("walks")
 
-    var weight: Int = weight
+    private var weight: Int = weight
         set(value) {
             if (value > 0) field = value
         }
