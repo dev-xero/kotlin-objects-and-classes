@@ -12,6 +12,7 @@ class Wolf : Canine() {
 
     override fun eat() = println("The wolf is eating $food")
     override fun makeNoise() = println("Hoooowl!")
+    override fun roam() = println("The wolf is roaming")
 }
 
 fun main() {
