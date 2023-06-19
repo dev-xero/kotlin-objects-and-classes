@@ -11,6 +11,6 @@ open class Animal {
 
     open fun makeNoise() = println("Noises")
     open fun eat() = println("Eating")
-    fun roam() = println("Roaming")
+    open fun roam() = println("Roaming")
     fun sleep() = println("Sleeping")
 }
