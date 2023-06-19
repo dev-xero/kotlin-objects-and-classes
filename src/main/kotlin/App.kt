@@ -73,7 +73,7 @@ fun main() {
     println(doggo.bark())
     println(puppy.bark())
 
-    println("${doggo.name} weighs ${doggo.weightInKgs}kg")
+    println("${doggo.name} is a cute ${doggo.breed} that weighs about ${doggo.weightInKgs}kg")
 
     println("\nPlanet ${earth.name} is ${if (earth.isHabitable) "habitable" else "not habitable"}")
     println("Planet ${mars.name} is ${if (mars.type.lowercase() != "terrestrial") "a gas giant" else "terrestrial"}")
