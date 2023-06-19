@@ -17,7 +17,9 @@ class Hippo : Animal() {
 
 fun main() {
     val hippo = Hippo()
+    hippo.hunger = 90
 
     println("This hippo lives in the ${hippo.habitat}")
+    println("This hippo is ${if (hippo.hunger > 40) "not" else ""} hungry")
     hippo.eat()
 }
